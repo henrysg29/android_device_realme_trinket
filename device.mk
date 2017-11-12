@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
 #  Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm665
- 
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     vendor.oppo.hardware.biometrics.fingerprint@2.1 \
@@ -103,7 +103,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     init.target.rc \
     init.recovery.qcom.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.safailnet.rc
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
