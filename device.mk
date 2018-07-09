@@ -49,9 +49,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     BluetoothResCommon
 
-# ANT+
+#  ANT+
 PRODUCT_PACKAGES += \
     AntHalService
+
+#  Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.realme_sdm665
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -94,6 +98,5 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
 
 PRODUCT_VENDOR_KERNEL_HEADERS := $(LOCAL_PATH)/kernel-headers
