@@ -66,6 +66,9 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 28
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+# ANT+
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)

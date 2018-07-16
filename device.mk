@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService
+
 # init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
