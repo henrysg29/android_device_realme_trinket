@@ -1,2 +1,6 @@
 # Audio
 /system/etc/audio_policy_configuration.xml    u:object_r:vendor_configs_file:s0
+
+# Power HAL
+/system/lib64/hw/power\.qcom\.so    u:object_r:vendor_file:s0
+/system/lib/hw/power\.qcom\.so      u:object_r:vendor_file:s0
