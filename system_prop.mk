@@ -19,3 +19,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=320 \
     ro.boot.avb_version=1.0 \
     ro.boot.vbmeta.avb_version=1.0
+
+# IMS Debug
+PRODUCT_PROPERTY_OVERRIDES += \
+   persist.dbg.volte_avail_ovr=1 \
+   persist.dbg.vt_avail_ovr=1 \
+   persist.dbg.wfc_avail_ovr=1
