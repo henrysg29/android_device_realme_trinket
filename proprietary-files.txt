@@ -3,3 +3,6 @@ lib64/com.qualcomm.qti.ant@1.0.so
 -lib64/libantradio.so
 lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
+
+# HotwordEnrollment
+-priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
