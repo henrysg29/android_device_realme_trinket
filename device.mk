@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothResCommon
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
