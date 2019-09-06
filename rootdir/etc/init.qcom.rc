@@ -13,6 +13,11 @@ on boot
     chown system system /proc/touchpanel/tp_fw_update
     write /proc/touchpanel/tp_fw_update 1
 
+service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
+    class main
+    user root
+    oneshot
+
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     override
     class main
