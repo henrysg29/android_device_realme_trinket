@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm665
  
 # Fingerprint
+PRODUCT_PACKAGES += \
+    vendor.oppo.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.biometrics.fingerprint@2.1-service.realme_sdm665
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
