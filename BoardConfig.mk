@@ -48,7 +48,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/trinket-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/RMX1911_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/RMX1911
 
 # Platform
