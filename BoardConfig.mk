@@ -53,6 +53,9 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vendor/RMX1911_defconfig
 TARGET_KERNEL_SOURCE := kernel/realme/RMX1911
+BOARD_ROOT_EXTRA_SYMLINKS := \
+    /vendor/firmware_mnt:/firmware
+BOARD_ROOT_EXTRA_FOLDERS := firmware
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
