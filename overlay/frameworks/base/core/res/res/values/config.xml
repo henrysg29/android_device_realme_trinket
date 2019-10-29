@@ -507,4 +507,7 @@
     <dimen name="rounded_corner_radius_bottom">0.0dip</dimen>
     <dimen name="rounded_corner_radius_top">0.0dip</dimen>
 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
 </resources>
