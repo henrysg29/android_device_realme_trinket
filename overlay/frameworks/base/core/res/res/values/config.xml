@@ -158,7 +158,19 @@
          backlight values for lux levels between these control points.
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>45</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>20</item>
+        <item>33</item>
+        <item>55</item>
+        <item>90</item>
+        <item>145</item>
+        <item>250</item>
+        <item>500</item>
         <item>1025</item>
         <item>1480</item>
         <item>2250</item>
@@ -169,33 +181,25 @@
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>8</item>
-        <item>22</item>
-        <item>48</item>
-        <item>78</item>
-        <item>128</item>
-        <item>206</item>
-        <item>255</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_dynamicHysteresisLuxLevels. The brightening threshold is calculated as
-         lux * (1.0f + CONSTRAINT_VALUE). When the current lux is higher than this threshold,
-         the screen brightness is recalculated. See the config_dynamicHysteresisLuxLevels
-         description for how the constraint value is chosen. -->
-    <integer-array name="config_dynamicHysteresisBrightLevels">
-        <item>30</item>
-    </integer-array>
-
-    <!-- Array of hysteresis constraint values for darkening, represented as tenths of a
-         percent. The length of this array is assumed to be one greater than
-         config_dynamicHysteresisLuxLevels. The darkening threshold is calculated as
-         lux * (1.0f - CONSTRAINT_VALUE). When the current lux is lower than this threshold,
-         the screen brightness is recalculated. See the config_dynamicHysteresisLuxLevels
-         description for how the constraint value is chosen. -->
-    <integer-array name="config_dynamicHysteresisDarkLevels">
-        <item>200</item>
+        <item>10</item>  <!-- 0-1 -->
+        <item>29</item>  <!-- 1-2 -->
+        <item>34</item>  <!-- 2-3 -->
+        <item>38</item>  <!-- 3-4 -->
+        <item>40</item>  <!-- 4-8 -->
+        <item>47</item>  <!-- 8-12 -->
+        <item>51</item>  <!-- 12-20 -->
+        <item>58</item>  <!-- 20-33 -->
+        <item>66</item>  <!-- 33-55 -->
+        <item>77</item>  <!-- 55-90 -->
+        <item>90</item>  <!-- 90-145 -->
+        <item>105</item>  <!-- 90-250 -->
+        <item>120</item>  <!-- 250-500 -->
+        <item>150</item>  <!-- 500-1025 -->
+        <item>170</item>  <!-- 1025-1480 -->
+        <item>190</item>  <!-- 1480-2250 -->
+        <item>206</item>  <!-- 2250-3300 -->
+        <item>230</item>  <!-- 3300-10000 -->
+        <item>255</item>  <!-- 10000+ -->
     </integer-array>
 
     <!-- Screen brightness used to dim the screen when the user activity
@@ -205,15 +209,11 @@
 
     <!-- Default screen brightness setting.
          Must be in the range specified by minimum and maximum. -->
-    <integer name="config_screenBrightnessSettingDefault">44</integer>
+    <integer name="config_screenBrightnessSettingDefault">128</integer>
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
-
-    <!-- The maximum range of gamma adjustment possible using the screen
-         auto-brightness adjustment setting. -->
-    <fraction name="config_autoBrightnessAdjustmentMaxGamma">300%</fraction>
 
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
