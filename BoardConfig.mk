@@ -116,6 +116,7 @@ TARGET_USES_MKE2FS := true
 
 # Device Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # QCOM Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
