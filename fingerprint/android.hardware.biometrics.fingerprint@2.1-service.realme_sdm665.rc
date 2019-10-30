@@ -5,7 +5,6 @@ service fps_hal.realme_sdm665 /system/bin/hw/android.hardware.biometrics.fingerp
     class late_start
     user system
     group system input uhid
-    writepid /dev/cpuset/system-background/tasks
 
 service fps_hal /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
     # "class hal" causes a race condition on some devices due to files created
