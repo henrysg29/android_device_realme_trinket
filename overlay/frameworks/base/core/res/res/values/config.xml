@@ -665,4 +665,6 @@
     <dimen name="status_bar_height_portrait">33.0dip</dimen>
     <dimen name="status_bar_height_landscape">35.0dip</dimen>
 
+    <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
+    <bool name="config_cleanupUnusedFingerprints">false</bool>
 </resources>
