@@ -1,6 +1,12 @@
 on post-fs-data
     write /sys/class/drm/card0-DSI-1/dim_layer_enable 1
 
+on boot
+
+    # Update touchscreen firmware
+    chown system system /proc/touchpanel/tp_fw_update
+    write /proc/touchpanel/tp_fw_update 1
+
 service vendor.imsdatadaemon /vendor/bin/imsdatadaemon
     override
     class main
