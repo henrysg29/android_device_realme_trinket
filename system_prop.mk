@@ -16,4 +16,6 @@
 
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=320
+    ro.sf.lcd_density=320 \
+    ro.boot.avb_version=1.0 \
+    ro.boot.vbmeta.avb_version=1.0
