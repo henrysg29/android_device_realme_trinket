@@ -74,6 +74,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.oppo_realme_trinket
 
+# Doze
+PRODUCT_PACKAGES += \
+    doze
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
 
@@ -193,7 +197,3 @@ TARGET_COMMON_QTI_COMPONENTS := \
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# Doze
-PRODUCT_PACKAGES += \
-    RealmeParts
