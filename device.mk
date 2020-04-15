@@ -26,6 +26,10 @@ $(call inherit-product-if-exists, vendor/realme/RMX1911/RMX1911-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:system/etc/msm_irqbalance.conf \
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -68,7 +72,7 @@ PRODUCT_PACKAGES += \
 #  Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.realme_sdm665
-
+ 
 # Fingerprint
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml
