@@ -21,3 +21,9 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # HotwordEnrollment
 -priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
+
+# Time
+-vendor/app/TimeService/TimeService.apk
+vendor/bin/time_daemon
+vendor/lib/libtime_genoff.so
+vendor/lib64/libtime_genoff.so
