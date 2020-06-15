@@ -53,7 +53,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
-# Telephony
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/apdr.conf:system/etc/apdr.conf \
+    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+    $(LOCAL_PATH)/gps/lowi.conf:system/etc/lowi.conf \
+    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:system/etc/xtwifi.con
+
+#Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
 
