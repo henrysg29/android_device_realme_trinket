@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
+# HILD
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/manifest.xml
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothResCommon
