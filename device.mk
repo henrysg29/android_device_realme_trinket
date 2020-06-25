@@ -77,7 +77,8 @@ PRODUCT_BOOT_JARS += \
 # init scripts
 PRODUCT_PACKAGES += \
     init.target.rc \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    ueventd.qcom.rc
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
