@@ -13,14 +13,14 @@
 # limitations under the License.
 
 $(call inherit-product, device/realme/RMX1911/device.mk)
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1911
 PRODUCT_MANUFACTURER := realme
 PRODUCT_MODEL := Realme 5
-PRODUCT_NAME := arrow_RMX1911
+PRODUCT_NAME := lineage_RMX1911
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
