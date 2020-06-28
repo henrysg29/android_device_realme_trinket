@@ -161,7 +161,6 @@ WIFI_DRIVER_STATE_OFF := "OFF"
 WIFI_DRIVER_STATE_ON := "ON"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
->>>>>>> 3ce9f63... RMX1911: Add Vendor Security Patch
 
 # Inherit from the proprietary version
 -include vendor/realme/RMX1911/BoardConfigVendor.mk
