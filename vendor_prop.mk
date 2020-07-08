@@ -16,18 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
-# RCS and IMS
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.rcs.supported=0 \
-    persist.vendor.ims.disableQXDMLogs=0 \
-    persist.vendor.ims.disableADBLogs=0 \
-    persist.vendor.ims.disableDebugLogs=0 \
-    persist.vendor.ims.disableIMSLogs=0 \
-    persist.vendor.ims.rtp.enableqxdm=3 \
-    persist.vendor.ims.vt.enableadb=3
-
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_PROVISIONED=1 \
