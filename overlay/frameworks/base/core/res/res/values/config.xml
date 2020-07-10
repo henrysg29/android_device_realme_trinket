@@ -570,11 +570,11 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -143,0 L -143,76 L 143,76 L 143,0 Z</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -162,0 L -162,00 L 162,00 L 162,0 Z</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">80.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
+    <dimen name="status_bar_height_portrait">26.0dp</dimen>
+    <dimen name="status_bar_height_landscape">28.0dp</dimen>
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
