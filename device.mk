@@ -60,10 +60,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
 
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
-
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msmnile
@@ -127,9 +123,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl.raphael
 
+
 # Livedisplay
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-sdm
+
+# Prebuilt Packages
+PRODUCT_PACKAGES += \
+    GCamGo
 
 # Media
 PRODUCT_COPY_FILES += \
