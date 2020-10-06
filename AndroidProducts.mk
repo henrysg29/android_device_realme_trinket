@@ -5,4 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_raphael.mk
+    $(LOCAL_DIR)/octavi_raphael.mk
+	
+COMMON_LUNCH_CHOICES := \
+    octavi_raphael-user \
+    octavi_raphael-userdebug \
+    octavi_raphael-eng
+
