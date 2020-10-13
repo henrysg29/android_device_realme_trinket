@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?> <!--
      Copyright (C) 2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -130,16 +129,6 @@
         <item>popup_lightsaber_down.ogg</item>
         <item>popup_throne_room_up.ogg</item>
         <item>popup_throne_room_down.ogg</item>
-    </string-array>
-
-    <string-array name="popupcamera_effects_entries">
-        <item>@string/action_none</item>
-        <item>@string/popup_title_muqin</item>
-        <item>@string/popup_title_yingyan</item>
-        <item>@string/popup_title_mofa</item>
-        <item>@string/popup_title_jijia</item>
-        <item>@string/popup_title_chilun</item>
-        <item>@string/popup_title_cangmen</item>
     </string-array>
 
     <string-array name="popupcamera_effects_values">
