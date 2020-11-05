@@ -464,7 +464,7 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -162,0 L -162,00 L 162,00 L 162,0 Z</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -125 0 C -100 0 -64 30 -54 47 C -39 66 -23 80 0 80 C 23 80 40 65 58 38 C 81 4 100 0 125 0 L -125 0 Z</string>
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
