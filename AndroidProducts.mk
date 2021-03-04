@@ -5,10 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_raphael.mk
-	
-COMMON_LUNCH_CHOICES := \
-    octavi_raphael-user \
-    octavi_raphael-userdebug \
-    octavi_raphael-eng
+    $(LOCAL_DIR)/octavi_r5x.mk
 

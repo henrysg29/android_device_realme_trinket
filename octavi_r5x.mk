@@ -6,7 +6,7 @@
 
 # Inherit some common device stuff.
 
-$(call inherit-product, device/xiaomi/raphael/device.mk)
+$(call inherit-product, device/realme/r5x/device.mk)
 
 
 # Inherit some common octavi stuff.
@@ -22,13 +22,11 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := raphael
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := octavi_raphael
+PRODUCT_BRAND := Realme
+PRODUCT_DEVICE := r5x
+PRODUCT_MANUFACTURER := Realme
+PRODUCT_NAME := octavi_r5x
 
-BUILD_FINGERPRINT := "Xiaomi/raphaelin/raphaelin:9/PKQ1.181121.001/V10.3.3.0.PFKINXM:user/release-keys"
+BUILD_FINGERPRINT := "unknown-user-10-QKQ1.200209.002--release-keys"
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-OCTAVI_DEVICE_MAINTAINER := IrongFly
+PRODUCT_GMS_CLIENTID_BASE := android-oppo

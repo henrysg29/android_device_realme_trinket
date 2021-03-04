@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/raphael/raphael-vendor.mk)
+$(call inherit-product-if-exists, vendor/realme/r5x/r5x-vendor.mk)
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -24,8 +24,8 @@ PRODUCT_PACKAGES += \
     com.android.vndk.current.on_vendor
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -39,7 +39,7 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -62,12 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := msmnile
-
-
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
+PRODUCT_BOARD_PLATFORM := trinket
 
 # Display
 PRODUCT_PACKAGES += \
@@ -75,9 +70,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan
-
-PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.raphael
 
 # FM
 PRODUCT_PACKAGES += \
@@ -94,21 +86,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# IFAA manager
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # Init
 PRODUCT_PACKAGES += \
-    init.mi_thermald.rc \
     init.qcom.rc \
     init.recovery.qcom.rc
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init-qcril-data.rc:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/init/init-qcril-data.rc
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -117,7 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl.raphael
+    android.hardware.light@2.0-impl.r5x
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
@@ -141,7 +122,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service.raphael
+    android.hardware.power@1.2-service.r5x
 
 #Recorder
 PRODUCT_PACKAGES += \
@@ -176,28 +157,6 @@ PRODUCT_BOOT_JARS += \
 # TextClassifier
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
-
-# Vendor Overlays
-PRODUCT_PACKAGES += \
-    AospFrameworkResOverlay \
-    AospWifiResOverlay \
-    CarrierConfigResCommon \
-    CellBroadcastReceiverResCommon \
-    DocumentsUIOverlay \
-    ElderlyNavigationBarOverlay \
-    FrameworksResCommon \
-    FrameworksResTarget \
-    GestureLineOverlay \
-    MccMncOverlay \
-    MiuiBiometricResOverlay \
-    MiuiBluetoothOverlay \
-    MiuiFrameworkResOverlay \
-    MiuiSettingsResOverlay \
-    MiuiSystemUIResOverlay \
-    OptInAppOverlay \
-    SystemUIResCommon \
-    TelecommResCommon \
-    TelephonyResCommon
 
 # WiFi Display
 PRODUCT_PACKAGES += \

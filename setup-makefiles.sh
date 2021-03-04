@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=raphael
-VENDOR=xiaomi
+DEVICE=r5x
+VENDOR=realme
 
 INITIAL_COPYRIGHT_YEAR=2019
 

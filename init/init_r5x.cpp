@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+#include <vector>
+#include <string>
+#include <fstream>
+
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
@@ -44,24 +48,24 @@ void property_override_multifp(char const buildfp[], char const systemfp[],
 	property_override(vendorfp, value);
 }
 
-void load_raphaelglobal() {
-    property_override("ro.product.model", "Mi 9T Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
+void load_RMX1911() {
+    property_override("ro.product.model", "Realme 5");
+    property_override("ro.build.product", "RMX1911");
+    property_override("ro.product.device", "RMX1911");
     property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
 }
 
-void load_raphaelin() {
-    property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphaelin");
-    property_override("ro.product.device", "raphaelin");
+void load_RMX1927() {
+    property_override("ro.product.model", "Realme 5S");
+    property_override("ro.build.product", "RMX1927");
+    property_override("ro.product.device", "RMX1927");
     property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
 }
 
-void load_raphael() {
-    property_override("ro.product.model", "Redmi K20 Pro");
-    property_override("ro.build.product", "raphael");
-    property_override("ro.product.device", "raphael");
+void load_RMX2030() {
+    property_override("ro.product.model", "Realme 5i");
+    property_override("ro.build.product", "RMX2030");
+    property_override("ro.product.device", "RMX2030");
     property_override("ro.build.description", "coral-user 11 RP1A.201005.004 6782484 release-keys");
 }
 
@@ -70,36 +74,37 @@ void load_dalvikvm_properties()
     struct sysinfo sys;
 
     sysinfo(&sys);
-    if (sys.totalram < 7000ull * 1024 * 1024) {
-        // 4/6GB RAM
-        SetProperty("dalvik.vm.heapstartsize", "16m");
-        SetProperty("dalvik.vm.heaptargetutilization", "0.5");
-        SetProperty("dalvik.vm.heapmaxfree", "32m");
+    if (sys.totalram < 3072ull * 1024 * 1024) {
+        // 4GB RAM
+        SetProperty("dalvik.vm.heapstartsize", "8m");
+        SetProperty("dalvik.vm.heaptargetutilization", "0.6");
+        SetProperty("dalvik.vm.heapmaxfree", "16m");
     } else {
-        // 8/12/16GB RAM
-        SetProperty("dalvik.vm.heapstartsize", "24m");
-        SetProperty("dalvik.vm.heaptargetutilization", "0.46");
-        SetProperty("dalvik.vm.heapmaxfree", "48m");
+        // 3GB RAM
+        SetProperty("dalvik.vm.heapstartsize", "8m");
+        SetProperty("dalvik.vm.heaptargetutilization", "0.75");
+        SetProperty("dalvik.vm.heapmaxfree", "8m");
     }
 
-    SetProperty("dalvik.vm.heapgrowthlimit", "256m");
+    SetProperty("dalvik.vm.heapgrowthlimit", "192m");
     SetProperty("dalvik.vm.heapsize", "512m");
-    SetProperty("dalvik.vm.heapminfree", "8m");
+    SetProperty("dalvik.vm.heapminfree", "512k");
 }
 
 void vendor_load_properties() {
-    std::string region = android::base::GetProperty("ro.boot.hwc", "");
+    std::ifstream infile("/proc/oppoVersion/prjVersion");
+    std::string prjName;
+    getline(infile, prjName);
 
-    if (region.find("CN") != std::string::npos) {
-        load_raphael();
-    } else if (region.find("INDIA") != std::string::npos) {
-        load_raphaelin();
-    } else if (region.find("GLOBAL") != std::string::npos) {
-        load_raphaelglobal();
+    if (prjName == "19631") {
+        load_RMX1911();
+    } else if (prjName == "19632") {
+        load_RMX1927();
+    } else if (prjName == "19743") {
+        load_RMX2030();
     } else {
-        LOG(ERROR) << __func__ << ": unexcepted region!";
+        LOG(ERROR) << __func__ << ": unexcepted prjVersion!";
     }
-
 
     // fingerprint
     property_override("ro.oem_unlock_supported", "0");

@@ -6,12 +6,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.camera.sat.fallback.dist=40 \
-    persist.camera.sat.fallback.dist.d=10 \
-    persist.camera.sat.fallback.luxindex=330 \
-    persist.camera.sat.fallback.lux.d=50 \
-    persist.vendor.camera.enableNCSService=TRUE \
-    persist.vendor.camera.enableTOFInterface=TRUE \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # CNE and DPM
@@ -28,20 +22,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.eyecare.brightness.threshold=11 \
-    ro.eyecare.brightness.level=5 \
-    ro.displayfeature.histogram.enable=true \
-    ro.hist.brightness.threshold=7 \
-    ro.sf.lcd_density=440 \
+    ro.sf.lcd_density=320 \
     ro.vendor.display.ad=1 \
     ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg \
     ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg \
-    ro.vendor.display.sensortype=2 \
-    ro.xiaomi.bl.poll=true \
-    persist.displayfeature.dc_backlight.threshold=610 \
-    persist.displayfeature.dc_backlight.enable=false \
-    persist.fod.modified.dc_status=false \
-    sys.displayfeature.hbm.enable=true
+    ro.vendor.display.sensortype=2
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \

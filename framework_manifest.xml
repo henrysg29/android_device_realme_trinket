@@ -1,5 +1,5 @@
 <manifest version="1.0" type="framework">
-    <hal format="hidl">
+<!--    <hal format="hidl">
         <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -7,5 +7,5 @@
             <name>IFingerprintInscreen</name>
             <instance>default</instance>
         </interface>
-    </hal>
+    </hal> -->
 </manifest>
