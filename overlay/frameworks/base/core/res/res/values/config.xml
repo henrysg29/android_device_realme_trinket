@@ -576,30 +576,6 @@
 	
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">true</bool>
-
-    <!-- Specifies the path that is used by AdaptiveIconDrawable class to crop launcher icons. -->
-    <string name="config_icon_mask" translatable="false">"M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z"</string>
-
-    <!-- Corner radius for bottom sheet system dialogs -->
-    <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
-
-    <!-- Corner radius of system buttons -->
-    <dimen name="config_buttonCornerRadius">4.0dip</dimen>
-
-    <!-- Corner radius of system dialogs -->
-    <dimen name="config_dialogCornerRadius">8.0dip</dimen>
-
-    <!-- The amount to scale fullscreen snapshots for Overview and snapshot starting windows. -->
-    <item format="float" type="dimen" name="config_fullTaskSnapshotScale">0.8</item>
-
-    <!-- Corner radius of system progress bars -->
-    <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
-
-    <!-- Show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
-
-    <!-- Shows the required view for in-display fingerprint -->
-    <bool name="config_supportsInDisplayFingerprint">true</bool>
 	
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
@@ -607,15 +583,6 @@
           specified name exists on the device, autofill will be disabled by default.
     -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
-
-    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService 
-         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
-         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
-         and Strength as defined in Authenticators.java -->
-    <string-array name="config_biometric_sensors" translatable="false" >
-        <!-- ID0:Fingerprint:Strong -->
-        <item>0:2:15</item>
-    </string-array>
 
     <!-- Indicates that p2p MAC randomization is supported on this device -->
     <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
@@ -688,28 +655,14 @@
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
     <bool name="config_defaultRingtonePickerEnabled">true</bool>
 
-    <!-- List supported color modes. -->
-    <integer-array name="config_availableColorModes">
-        <item>0</item> <!-- COLOR_MODE_NATURAL -->
-        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
-        <item>2</item> <!-- COLOR_MODE_SATURATED -->
-        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
-        <item>256</item>
-        <item>257</item>
-        <item>258</item>
-        <item>259</item>
-        <item>260</item>
-        <item>261</item>
-        <item>262</item>
-        <item>263</item>
-        <item>264</item>
-        <item>265</item>
-    </integer-array>
-
  <!-- Battery Health -->
     <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
     <bool name="config_supportBatteryHealth">true</bool>
     
+ <!-- Height of the status bar -->
+    <dimen name="status_bar_height_portrait">33.0dip</dimen>
+    <dimen name="status_bar_height_landscape">35.0dip</dimen>
+
 </resources>

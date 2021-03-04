@@ -23,9 +23,6 @@
     <integer name="config_maxVisibleNotificationIcons">7</integer>
     <integer name="config_maxVisibleNotificationIconsWhenDark">8</integer>
     
-    <!-- Burn in protection -->
-    <bool name="config_statusBarBurnInProtection">true</bool>
-
     <!-- Smart replies in notifications: Whether by default tapping on a choice should let the user
          edit the input before it is sent to the app. Developers can override this via
          RemoteInput.Builder.setEditChoicesBeforeSending. -->

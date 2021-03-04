@@ -46,6 +46,6 @@
     </string-array>
 
     <!-- Do not translate. Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default" translatable="false">Redmi K20 Pro</string>
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Realme 5</string>
 </resources>
 
