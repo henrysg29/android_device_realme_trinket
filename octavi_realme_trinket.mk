@@ -27,6 +27,6 @@ PRODUCT_DEVICE := realme_trinket
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := octavi_realme_trinket
 
-BUILD_FINGERPRINT := "unknown-user-10-QKQ1.200209.002--release-keys"
+BUILD_FINGERPRINT := "trinket-user-10-QKQ1.200209.002--release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
