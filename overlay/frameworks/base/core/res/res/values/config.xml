@@ -59,6 +59,8 @@
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently in hardware. --> 
+    <bool name="config_setColorTransformAccelerated">true</bool>
     <!-- Whether the night display mode is available. -->
     <bool name="config_nightDisplayAvailable">true</bool>
     <!-- Control whether the always on display mode is enabled by default. This value will be used
