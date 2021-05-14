@@ -86,10 +86,10 @@ public class DeviceSettings extends PreferenceFragment
         mSmartChargingSwitch.setChecked(prefs.getBoolean(KEY_CHARGING_SWITCH, false));
         mSmartChargingSwitch.setOnPreferenceChangeListener(new SmartChargingSwitch(getContext()));
 
-        mResetStats = (TwoStatePreference) findPreference(KEY_RESET_STATS);
-        mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
-        mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
-        mResetStats.setOnPreferenceChangeListener(this);
+      //  mResetStats = (TwoStatePreference) findPreference(KEY_RESET_STATS);
+      //  mResetStats.setChecked(prefs.getBoolean(KEY_RESET_STATS, false));
+      //  mResetStats.setEnabled(mSmartChargingSwitch.isChecked());
+     //   mResetStats.setOnPreferenceChangeListener(this);
 
         mSeekBarPreference = (SeekBarPreference) findPreference("seek_bar");
         mSeekBarPreference.setEnabled(mSmartChargingSwitch.isChecked());
