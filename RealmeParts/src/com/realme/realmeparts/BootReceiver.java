@@ -51,8 +51,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                     PREF_CONTRAST, CONTRAST_DEFAULT) + CONTRAST_OFFSET);
             FileUtils.setValue(KCAL_HUE, Settings.Secure.getInt(context.getContentResolver(),
                     PREF_HUE, HUE_DEFAULT));
-            FileUtils.setValue(RealmeParts.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
-                    RealmeParts.PREF_USB_FASTCHARGE, 1));
         }
     }
 }
