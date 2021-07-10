@@ -50,7 +50,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml
+    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:system/etc/audio_policy_configuration.xml \
+    $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 #Perf
 PRODUCT_COPY_FILES += \
@@ -106,7 +107,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.recovery.qcom.rc \
     ueventd.qcom.rc \
-    init.safailnet.rc
+    init.safailnet.rc \
+    init.realmeparts.rc
 
 # HotwordEnrollement
 PRODUCT_COPY_FILES += \
