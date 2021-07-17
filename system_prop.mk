@@ -29,3 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # OTG
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.oem.otg_support=true
+    
+# Google keyboard
+ro.com.google.ime.height_ratio=1.1
+
+# GBoard Spacing
+ro.com.google.ime.kb_pad_port_b=1
