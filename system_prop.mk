@@ -35,3 +35,6 @@ ro.com.google.ime.height_ratio=1.1
 
 # GBoard Spacing
 ro.com.google.ime.kb_pad_port_b=1
+
+# Vulkan
+debug.hwui.renderer=skiavk
